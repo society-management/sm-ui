@@ -1,0 +1,22 @@
+{
+  "name": "society",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w dist/assets/sass/ -o dist/assets/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/society-management/sm-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/society-management/sm-ui/issues"
+  },
+  "homepage": "https://github.com/society-management/sm-ui#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
