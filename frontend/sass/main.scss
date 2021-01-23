@@ -147,7 +147,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
+body {
+  overflow-x: hidden;
+}
 article,
 aside,
 details,
@@ -291,6 +293,98 @@ textarea {
       }
       &:hover {
         color: _palette(accent1);
+      }
+    }
+  }
+}
+
+#content {
+  background-color: _palette(fg-light);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 0;
+  height: 100vh;
+  h3 {
+    margin-bottom: 1rem;
+  }
+  .content-display {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    .content-display-list {
+      height: 60vh;
+      ul {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+        li {
+          background-color: _palette(fg-light);
+          // border-radius: 2rem;
+          list-style: none;
+          padding: 0.3rem;
+          padding-left: 1rem;
+          border-bottom: 2px solid _palette(accent1);
+          text-align: left;
+          &:first-child {
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+          }
+
+          &:nth-last-child(1) {
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-bottom: none !important;
+            font-size: 1rem;
+          }
+          &:hover {
+            background-color: _palette(fg);
+
+            transform: scaleX(0.98);
+            color: yellow;
+            &:first-child {
+              border-top-left-radius: 2rem;
+              border-top-right-radius: 2rem;
+            }
+            &:last-child {
+              border-bottom-left-radius: 2rem;
+              border-bottom-right-radius: 2rem;
+            }
+          }
+
+          a {
+            padding-left: 0.3rem;
+            color: _palette(bg);
+            text-decoration: none;
+            border: none;
+          }
+        }
+      }
+    }
+    .content-display-pic {
+      height: 60vh;
+
+      margin: 0;
+      padding: 0;
+
+      img {
+        border-radius: 2rem;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .content-display-details {
+      height: 20vh;
+      h2 {
+        margin: 0.2rem;
+        // padding: 0;
+        font-size: 1.5rem;
+      }
+      p {
+        margin: 0.2rem;
+        line-height: 1.5rem;
       }
     }
   }
@@ -624,7 +718,7 @@ body.landing {
 
 .container {
   margin: 0 auto;
-  max-width: calc(100% - #{_size(element-margin) * 2});
+  max-width: calc(100% - #{_size(element-margin) * 1});
   width: _size(container-width);
 
   &.xsmall {
