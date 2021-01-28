@@ -218,6 +218,53 @@ textarea {
 // }
 
 // logo setting
+// @media only screen and (max-width: 768px) {
+//   #logo {
+//     .logo-png {
+//       align-self: center;
+//       width: 40px;
+//       height: 40px;
+//       // background-color: red;
+//       border-radius: 5px;
+//     }
+//     a {
+//       display: flex;
+//       font-weight: 700;
+//       color: _palette(fg);
+//       background-color: yellow;
+
+//       .content-l {
+//         height: 50px;
+
+//         background-color: red !important;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         margin-left: 1rem;
+//         span {
+//           position: relative;
+//           // width:50%;
+//           height: 40%;
+//           display: block;
+//           // color: red;
+//         }
+//         span::before {
+//           content: "";
+//           position: absolute;
+//           top: 0.7rem;
+//           left: 0;
+//           margin: 10% 0;
+
+//           width: 60%;
+//           height: 85%;
+//           background-color: #999b84;
+//           z-index: -1;
+//           transform: scale(1.2) skewX(-15deg);
+//         }
+//       }
+//     }
+//   }
+// }
 #logo {
   .logo-png {
     align-self: center;
