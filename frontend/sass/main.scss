@@ -304,17 +304,24 @@ textarea {
   padding: 1rem;
   margin: 0;
   height: 100vh;
-  h3 {
-    margin-bottom: 1rem;
+  .content-header {
+    height: 10%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    span {
+      border-bottom: 3px solid _palette(accent1) !important;
+    }
   }
   .content-display {
     display: grid;
+    height: 90%;
     grid-template-columns: 30% 70%;
+    grid-template-rows: 60% 40%;
     grid-gap: 0.5rem;
     margin: 0;
     padding: 0;
     .content-display-list {
-      height: 60vh;
       ul {
         height: 100%;
         padding: 0;
@@ -322,7 +329,6 @@ textarea {
 
         li {
           background-color: _palette(fg-light);
-          // border-radius: 2rem;
           list-style: none;
           padding: 0.3rem;
           padding-left: 1rem;
@@ -364,7 +370,7 @@ textarea {
       }
     }
     .content-display-pic {
-      height: 60vh;
+      // height: 50%;
 
       margin: 0;
       padding: 0;
@@ -376,7 +382,7 @@ textarea {
       }
     }
     .content-display-details {
-      height: 20vh;
+      // height: 20%;
       h2 {
         margin: 0.2rem;
         // padding: 0;
@@ -385,8 +391,65 @@ textarea {
       p {
         margin: 0.2rem;
         line-height: 1.5rem;
+        text-align: justify;
       }
     }
+  }
+}
+.services {
+  background-color: _palette(fg-light);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 0;
+
+  &-header {
+    // width: 50%;
+    margin: auto;
+    justify-content: center;
+    span {
+      border-bottom: 2px solid _palette(accent1) !important;
+    }
+  }
+
+  &-content {
+    margin: 0 !important;
+
+    // background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem !important;
+    grid-gap: 0.5rem;
+    div {
+      border-radius: 1rem;
+      img {
+        border-radius: 0.5rem;
+      }
+
+      p {
+        margin-bottom: 0.2rem;
+        text-align: left;
+        font-weight: 400 !important;
+      }
+
+      a {
+        border: none;
+        text-align: right;
+        display: block;
+        font-weight: 500;
+      }
+    }
+    .middle {
+      background-color: #c7cfb7;
+      color: _palette(bg-transparent);
+      h4 {
+        color: _palette(bg-transparent);
+        font-weight: 800;
+        border-bottom: 2px solid _palette(accent4) !important;
+      }
+    }
+  }
+  div:nth-child(odd) {
+    background-color: _palette(accent2);
   }
 }
 
