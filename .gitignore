@@ -1,14 +1,14 @@
 ### Gradle
-.gradle/
-build/
+sm-ui/backend/society-management/.gradle/
+sm-ui/backend/society-management/build/
 
 ### Java
-*.class
-*.log
+sm-ui/backend/society-management/*.class
+sm-ui/backend/society-management/*.log
 
 ### Intellij
-*.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/libraries
+sm-ui/backend/*.iml
+sm-ui/backend/.idea/workspace.xml
+sm-ui/backend/.idea/tasks.xml
+sm-ui/backend/.idea/gradle.xml
+sm-ui/backend/.idea/libraries
